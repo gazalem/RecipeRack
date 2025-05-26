@@ -4,6 +4,7 @@ import '../models/recipe_model.dart';
 import '../utils/recipe_parser.dart';
 import '../widgets/recipe_card.dart';
 import 'dart:convert'; // For json.decode
+import '../main.dart'; // Import InputBoxWithButtons if needed
 
 class RecipeListScreen extends StatefulWidget {
   const RecipeListScreen({super.key});
@@ -83,7 +84,14 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
       appBar: AppBar(
         title: const Text('Weekly Meal Plan'),
       ),
-      body: _buildBody(),
+      body: Column(
+        children: [
+          Expanded(
+            child: _buildBody(),
+          ),
+          InputBoxWithButtons(), // <-- Add this line
+        ],
+      ),
     );
   }
 
