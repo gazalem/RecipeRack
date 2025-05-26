@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ollama_dart/ollama_dart.dart';
 import '../models/recipe_model.dart';
 import '../utils/recipe_parser.dart';
 import '../widgets/recipe_card.dart';
