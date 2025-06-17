@@ -40,9 +40,6 @@ dependencies:
   # It is also used in the app to make requests to the backend server.
   http: ^1.4.0
 
-  # Ollama_dart library to make call to Ollama API
-  ollama_dart: ^0.2.2+1
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
