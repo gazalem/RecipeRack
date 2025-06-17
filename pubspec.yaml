@@ -35,6 +35,14 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # Dart HTTP library to make HTTP requests
+  # This is used by the ollama_dart library to make requests to the Ollama API.
+  # It is also used in the app to make requests to the backend server.
+  http: ^1.4.0
+
+  # Ollama_dart library to make call to Ollama API
+  ollama_dart: ^0.2.2+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -45,14 +53,6 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
-
-  # Ollama_dart library to make call to Ollama API
-  ollama_dart: ^0.2.2+1
-  
-  # Dart HTTP library to make HTTP requests
-  # This is used by the ollama_dart library to make requests to the Ollama API.
-  # It is also used in the app to make requests to the backend server.
-  http: ^1.4.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
