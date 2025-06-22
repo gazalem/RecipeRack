@@ -43,6 +43,11 @@ dependencies:
   # Logging framework for proper error logging
   logging: ^1.2.0
 
+  # Dart HTTP library to make HTTP requests
+  # This is used by the ollama_dart library to make requests to the Ollama API.
+  # It is also used in the app to make requests to the backend server.
+  http: ^1.4.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

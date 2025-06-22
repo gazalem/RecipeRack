@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Models/recipe_model.dart';
+import '../models/recipe_model.dart';
 import '../Utils/recipe_parser.dart';
 import '../widgets/recipe_card.dart';
 import '../main.dart'; // Import InputBoxWithButtons if needed
