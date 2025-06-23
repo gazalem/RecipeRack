@@ -3,7 +3,7 @@ class Recipe {
   final String name;
   final String prepTime;
   final String cookTime;
-  final String ingredients;
+  final List<String> ingredients;
   final String instructions;
 
   Recipe({

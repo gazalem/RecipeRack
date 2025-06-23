@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/recipe_model.dart';
+import '../Models/recipe_model.dart';
 
 class RecipeCard extends StatelessWidget {
   final Recipe recipe;
@@ -42,7 +42,7 @@ class RecipeCard extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 4.0),
-            Text(recipe.ingredients),
+            Text(recipe.ingredients.join(', ')),
             const SizedBox(height: 12.0),
             Text(
               'Instructions:',
