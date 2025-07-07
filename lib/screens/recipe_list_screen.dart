@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../models/recipe_model.dart';
-import '../Utils/recipe_parser.dart';
+import '../Models/recipe_model.dart';
+import '../utils/recipe_parser.dart';
 import '../widgets/recipe_card.dart';
 import '../main.dart'; // Import InputBoxWithButtons if needed
-import '../Utils/api_service.dart'; // Import your API service if needed
+import '../utils/api_service.dart'; // Import your API service if needed
 
 class RecipeListScreen extends StatefulWidget {
   const RecipeListScreen({super.key});
@@ -51,7 +51,7 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
       ];
       
       // Use the ApiService to fetch recipes
-      final jsonResponse = await _apiService.fetchRecipesFromOllama(ingredients);
+      final jsonResponse = await _apiService.fetchRecipesFromOllamaPersistent(ingredients);
       
       // Parse the JSON response using the new parser
       final parsedRecipes = RecipeParser.parseRecipesFromJson(jsonResponse);
